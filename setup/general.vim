@@ -1,31 +1,28 @@
-"""Airlne"""
+set mouse=a
+
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#tab_nr_type = 1 " tab number
+
+set hlsearch
+set omnifunc=rubycomplete#Complete
+let g:rubycomplete_buffer_loading = 1
+let g:rubycomplete_classes_in_global=1
+let g:rubycomplete_rails = 1
+
+
+""" Airlines
 set t_Co=256
 set laststatus=2
 set encoding=utf-8
-"set ttimeoutlen=50
 
-"set guifont=Inconsolata\ for\ Powerline:h15
-"let g:Powerline_symbols = 'fancy'
-"set encoding=utf-8
-"set t_Co=256
-"set fillchars+=stl:\ ,stlnc:\
-"set term=xterm-256color
-"set termencoding=utf-8
-"if has("gui_running")
-     "let s:uname = system("uname")
-        "if s:uname == "Darwin\n"
-                "set guifont=Inconsolata\ for\ Powerline:h15
-                   "endif
-                 "endif
-
-
+"let NERDTreeDirArrows=0
 "let g:syntastic_ruby_checkers = ['mri', 'ruby']
-
+let g:syntastic_quiet_messages = { "type": "style" }
 let g:syntastic_check_on_open = 1
 
 let g:ctrlp_clear_cache_on_exit = 0
 let g:ctrlp_match_window = 'max:30'
-let g:ctrlp_working_path_mode = 'c'
+let g:ctrlp_working_path_mode = ''
 "set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
 
 "let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
@@ -42,14 +39,10 @@ set expandtab
 
 set number
 syntax enable
-set background=dark
+set background=light
 let g:solarized_termcolors = 256  " New line!!
 colorscheme solarized
 let g:netrw_liststyle=3
-
-"call unite#filters#matcher_default#use(['matcher_fuzzy'])
-"call unite#custom#source('file_rec/async', 'ignore_pattern', '.idea\|fonts\|images\|stylesheets')
-
 
 if !argc()
  " autocmd VimEnter * Unite -no-split -start-insert file_rec/async
