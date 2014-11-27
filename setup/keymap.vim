@@ -28,7 +28,7 @@ nmap <F3> <Plug>RailsFind
 nnoremap <C-Left> <C-O> 
 nnoremap <C-Right> <C-i>
 
-"nmap s <Plug>(easymotion-s2)
+nmap s <Plug>(easymotion-s2)
 nmap t <Plug>(easymotion-t2)
 
 function! ToggleErrors()
@@ -40,3 +40,4 @@ function! ToggleErrors()
     endif
 endfunction
 nnoremap <silent> <Leader>e :<C-u>call ToggleErrors()<CR>
+" TODO: add syntastic check hotkey maybe

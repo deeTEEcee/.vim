@@ -1,5 +1,8 @@
+"General VIM Settings
 set mouse=a
+set clipboard=unnamed
 
+" Plugin Settings
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#tab_nr_type = 1 " tab number
 
