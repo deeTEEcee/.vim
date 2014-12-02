@@ -7,11 +7,15 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'tpope/vim-fugitive'
+Plugin 'xolox/vim-session'
+Plugin 'xolox/vim-misc' "needed for vim-session
 
 "Visuals and Info
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'bling/vim-airline'
+"Plugin 'gcmt/taboo.vim' "!careful, make sure airline tablines are disabled for this
 "
 "File/Directory Searching and Code Browsing
 Plugin 'https://github.com/scrooloose/nerdtree'

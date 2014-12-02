@@ -2,6 +2,15 @@ let maplocalleader = ","
 
 "General
 nnoremap <Leader>pi :PluginInstall<CR>
+
+"Git (Use :Git <command> and we will temporarily go back to the terminal. Some
+"special commands just aren't helpful in git fugitive)
+nnoremap <Leader>gl :Git log -p %<CR>
+nnoremap <Leader>gb :Gblame<CR>
+"Sessions
+nnoremap <Leader>ss :SaveSession<CR>
+nnoremap <Leader>sd :DeleteSession<Cr>
+
 "Input
 nmap <Enter> O<Esc>
 nmap <leader>p <Plug>yankstack_substitute_older_paste

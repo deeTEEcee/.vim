@@ -2,9 +2,20 @@
 set mouse=a
 set clipboard=unnamed
 
-" Plugin Settings
+""""""""" Plugin Settings
+"Airlines
+set t_Co=256
+set laststatus=2
+set encoding=utf-8
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#tab_nr_type = 1 " tab number
+
+"Taboo Tabs
+"let g:taboo_tab_format="%N %m"
+
+"Sessions
+let g:session_autoload = 'yes'
+let g:session_autosave = 'no'
 
 set hlsearch
 set omnifunc=rubycomplete#Complete
@@ -13,10 +24,6 @@ let g:rubycomplete_classes_in_global=1
 let g:rubycomplete_rails = 1
 
 
-""" Airlines
-set t_Co=256
-set laststatus=2
-set encoding=utf-8
 
 "let NERDTreeDirArrows=0
 "let g:syntastic_ruby_checkers = ['mri', 'ruby']
@@ -31,7 +38,7 @@ let g:ctrlp_working_path_mode = ''
 "let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 let g:ctrlp_custom_ignore = {
   \ 'hidden_dir':  '\v[\/]\.(git|hg|svn)$',
-  \ 'dir': '\vtmp|vendor|bin|public',
+  \ 'dir': '\vtmp|bin|public',
   \ 'file': '\v\.(exe|so|dll|markdown)$',
   \ }
 
