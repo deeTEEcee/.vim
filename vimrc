@@ -9,14 +9,17 @@ Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'tpope/vim-fugitive'
 Plugin 'xolox/vim-session'
-Plugin 'xolox/vim-misc' "needed for vim-session
+  Plugin 'xolox/vim-misc' "needed for vim-session
+Plugin 'nelstrom/vim-textobj-rubyblock'
+  Plugin 'kana/vim-textobj-user' "needed for rubyblock
+Plugin 'tpope/vim-surround'
 
 "Visuals and Info
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'bling/vim-airline'
-"Plugin 'gcmt/taboo.vim' "!careful, make sure airline tablines are disabled for this
-"
+Plugin 'fweep/vim-tabber' " tab labeling for use with airline
+
 "File/Directory Searching and Code Browsing
 Plugin 'https://github.com/scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
@@ -28,6 +31,7 @@ Plugin 'Lokaltog/vim-easymotion'
 "Rails
 Plugin 'https://github.com/tpope/vim-rails'
 Plugin 'vim-ruby/vim-ruby'
+Plugin 'tpope/vim-endwise'
 
 call vundle#end()            " required
 filetype plugin indent on    " required

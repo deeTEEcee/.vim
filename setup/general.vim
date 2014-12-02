@@ -1,21 +1,47 @@
-"General VIM Settings
+"""""""" General Settings
+""" MISC
+if has("autocmd")
+  filetype indent plugin on
+endif
+  
+""" Coding
 set mouse=a
 set clipboard=unnamed
+set smartindent
+filetype indent on
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
+set expandtab
+
+
+""" Visual
+set number
+syntax enable
+set background=light
+let g:solarized_termcolors = 256  " New line!!
+colorscheme solarized
+let g:netrw_liststyle=3
+let g:tabber_predefined_labels = { 1: 'Models', 2: 'Views', 3: 'Controllers', 4: 'Routes', 5: 'Translations', 6: 'Helpers' }
 
 """"""""" Plugin Settings
+"Enable tabline
+set guioptions-=e
+set tabline=%!tabber#TabLine()
 "Airlines
 set t_Co=256
 set laststatus=2
 set encoding=utf-8
-let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#enabled = 0
 let g:airline#extensions#tabline#tab_nr_type = 1 " tab number
-
-"Taboo Tabs
-"let g:taboo_tab_format="%N %m"
 
 "Sessions
 let g:session_autoload = 'yes'
+let g:session_default_to_last = 1
 let g:session_autosave = 'no'
+
+"Ruby
+runtime macros/matchit.vim
 
 set hlsearch
 set omnifunc=rubycomplete#Complete
@@ -42,17 +68,7 @@ let g:ctrlp_custom_ignore = {
   \ 'file': '\v\.(exe|so|dll|markdown)$',
   \ }
 
-set smartindent
-set tabstop=2
-set shiftwidth=2
-set expandtab
 
-set number
-syntax enable
-set background=light
-let g:solarized_termcolors = 256  " New line!!
-colorscheme solarized
-let g:netrw_liststyle=3
 
 if !argc()
  " autocmd VimEnter * Unite -no-split -start-insert file_rec/async
