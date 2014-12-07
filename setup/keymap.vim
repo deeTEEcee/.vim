@@ -1,7 +1,12 @@
 let maplocalleader = ","
 
+" TODO: make abbreviations for tohru's preferences"
+
 """"""""General
 nnoremap <Leader>pi :PluginInstall<CR>
+"nnoremap <leader>ev :vsplit $MYVIMRC<cr> and also :source it
+nnoremap d "_d
+vnoremap d "_d
 
 "Git (Use :Git <command> and we will temporarily go back to the terminal. Some
 "special commands just aren't helpful in git fugitive)
@@ -9,11 +14,11 @@ nnoremap <Leader>gl :Git log -p %<CR>
 nnoremap <Leader>gb :Gblame<CR>
 "Sessions
 nnoremap <Leader>ss :SaveSession dev<CR>
-nnoremap <Leader>sst :SaveSession template<CR>
+nnoremap <Leader>ssr :SaveSession g-rails<CR>
 nnoremap <Leader>sd :DeleteSession dev<CR>
-nnoremap <Leader>sdt :DeleteSession template<CR>
+nnoremap <Leader>sdr :DeleteSession g-rails<CR>
 nnoremap <Leader>so :OpenSession dev<CR>
-nnoremap <Leader>sot :OpenSession template<CR>
+nnoremap <Leader>sor :OpenSession g-rails<CR>
 
 """"""""Input
 nmap <Enter> O<Esc>
@@ -28,7 +33,7 @@ nnoremap <silent> <C-l> :nohl<CR><C-l>
 """ Tabber Plugin
 nnoremap <silent> <C-t>            :999TabberNew<CR>
 nnoremap <silent> <Leader><Leader> :TabberSelectLastActive<CR>
-nnoremap <silent> <Leader>tn       :TabberNew<CR>
+nnoremap <silent> <Leader>tn       :tabnew<CR>
 nnoremap <silent> <Leader>tm       :TabberMove<CR>
 nnoremap <silent> <Leader>tc       :tabclose<CR>
 nnoremap <silent> <Leader>tl       :TabberShiftLeft<CR>
@@ -61,7 +66,7 @@ nnoremap <C-Left> <C-O>
 nnoremap <C-Right> <C-i>
 
 nmap s <Plug>(easymotion-s2)
-nmap t <Plug>(easymotion-t2)
+"nmap t <Plug>(easymotion-t2)
 
 function! ToggleErrors()
     let old_last_winnr = winnr('$')

@@ -1,4 +1,4 @@
 .swp
 bundle
 sessions/*
-!sessions/default.vim
+!sessions/g-rails.vim

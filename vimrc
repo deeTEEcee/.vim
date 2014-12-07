@@ -1,4 +1,5 @@
 set nocompatible
+set nomodeline
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 set rtp+=~/.vim/bundle/vimproc.vim/autoload/*,~/.vim/bundle/vimproc.vim/plugin/*
@@ -13,6 +14,9 @@ Plugin 'xolox/vim-session'
 Plugin 'nelstrom/vim-textobj-rubyblock'
   Plugin 'kana/vim-textobj-user' "needed for rubyblock
 Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-abolish'
+Plugin 'tpope/vim-repeat' " see http://vimcasts.org/episodes/creating-repeatable-mappings-with-repeat-vim/ if confused
+Plugin 'tpope/vim-commentary' " test this out and get rid of NERDCommentator
 
 "Visuals and Info
 Plugin 'altercation/vim-colors-solarized'
@@ -25,6 +29,8 @@ Plugin 'https://github.com/scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
 Plugin 'ggreer/the_silver_searcher' "ag for commandline
 Plugin 'rking/ag.vim' "ag for vim
+Plugin 'mileszs/ack.vim'
+Plugin 'henrik/vim-qargs' "for commands on quickfix list
 Plugin 'ervandew/supertab'
 Plugin 'Lokaltog/vim-easymotion'
 

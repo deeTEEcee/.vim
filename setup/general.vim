@@ -1,8 +1,8 @@
 """""""" General Settings
-""" MISC
 if has("autocmd")
   filetype indent plugin on
 endif
+let g:agprg="ag -Q --nogroup --nocolor --column"
   
 """ Coding
 set mouse=a
@@ -22,7 +22,7 @@ set background=light
 let g:solarized_termcolors = 256  " New line!!
 colorscheme solarized
 let g:netrw_liststyle=3
-let g:tabber_predefined_labels = { 1: 'Models', 2: 'Views', 3: 'Controllers', 4: 'Routes', 5: 'Translations', 6: 'Helpers' }
+let g:tabber_predefined_labels = { 1: 'Models', 2: 'Views', 3: 'Controllers', 4: 'Routes', 5: 'Translations', 6: 'Helpers' } " TODO: only if this is a rails project
 
 """"""""" Plugin Settings
 "Enable tabline
@@ -64,7 +64,7 @@ let g:ctrlp_working_path_mode = ''
 "let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 let g:ctrlp_custom_ignore = {
   \ 'hidden_dir':  '\v[\/]\.(git|hg|svn)$',
-  \ 'dir': '\vtmp|bin|public',
+  \ 'dir': '\vtmp|public',
   \ 'file': '\v\.(exe|so|dll|markdown)$',
   \ }
 
