@@ -1,6 +1,6 @@
 " ~/.vim/sessions/g-rails.vim:
 " Vim session script.
-" Created by session.vim 2.7 on 07 December 2014 at 18:08:34.
+" Created by session.vim 2.7 on 09 December 2014 at 01:52:49.
 " Open this file in Vim and run :source % to restore your session.
 
 set guioptions=gmrL
@@ -137,7 +137,7 @@ setlocal fdl=0
 setlocal fml=1
 setlocal fdn=20
 setlocal fen
-tabnext 7
+tabnext 1
 if exists('s:wipebuf')
 "   silent exe 'bwipe ' . s:wipebuf
 endif
@@ -154,7 +154,7 @@ let &so = s:so_save | let &siso = s:siso_save
 " by :mksession out of the box).
 
 1wincmd w
-tabnext 7
+tabnext 1
 if exists('s:wipebuf')
   if empty(bufname(s:wipebuf))
 if !getbufvar(s:wipebuf, '&modified')

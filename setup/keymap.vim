@@ -7,12 +7,26 @@ nnoremap <Leader>pi :PluginInstall<CR>
 "nnoremap <leader>ev :vsplit $MYVIMRC<cr> and also :source it
 nnoremap d "_d
 vnoremap d "_d
+vnoremap y ygv 
+nnoremap <Up> -
+nnoremap <Down> +
+nnoremap <C-d> dd
+
+nnoremap <Leader>q :qa<CR>
+nnoremap <Leader>w :wa<CR>
+
+
+nmap ,cp :let @*=expand("%:p")<CR>
+nmap ,cp :let @*=expand("%:p:h")<CR>
+"Refresh command
+nnoremap <Leader>ra :CtrlPClearCache<CR>:checktime<CR>
+nnoremap <Leader>rc :so $MYVIMRC<CR>
 
 "Git (Use :Git <command> and we will temporarily go back to the terminal. Some
 "special commands just aren't helpful in git fugitive)
 nnoremap <Leader>gl :Git log -p %<CR>
 nnoremap <Leader>gb :Gblame<CR>
-"Sessions
+
 nnoremap <Leader>ss :SaveSession dev<CR>
 nnoremap <Leader>ssr :SaveSession g-rails<CR>
 nnoremap <Leader>sd :DeleteSession dev<CR>
@@ -30,15 +44,13 @@ nmap <leader>P <Plug>yankstack_substitute_newer_paste
 nnoremap <silent> <C-l> :nohl<CR><C-l>
 " \ig = indent colors
 
-""" Tabber Plugin
-nnoremap <silent> <C-t>            :999TabberNew<CR>
+""" Tabs
+nnoremap <Leader>tm :Tabmerge 
+
+nnoremap <silent> <Leader>tn            :999TabberNew<CR>
 nnoremap <silent> <Leader><Leader> :TabberSelectLastActive<CR>
-nnoremap <silent> <Leader>tn       :tabnew<CR>
-nnoremap <silent> <Leader>tm       :TabberMove<CR>
+nnoremap <silent> <C-t>       :tabnew<CR>
 nnoremap <silent> <Leader>tc       :tabclose<CR>
-nnoremap <silent> <Leader>tl       :TabberShiftLeft<CR>
-nnoremap <silent> <Leader>tr       :TabberShiftRight<CR>
-nnoremap <silent> <Leader>ts       :TabberSwap<CR>
 nnoremap <silent> <Leader>1        :tabnext 1<CR>
 nnoremap <silent> <Leader>2        :tabnext 2<CR>
 nnoremap <silent> <Leader>3        :tabnext 3<CR>
@@ -50,13 +62,13 @@ nnoremap <silent> <Leader>8        :tabnext 8<CR>
 nnoremap <silent> <Leader>9        :tabnext 9<CR>
  
 """"""""Directory/File Browsing
-nmap <C-d> :NERDTreeToggle<CR>
+nmap <F1> :NERDTreeToggle<CR>
 " m = options (a to add new file)"
 nnoremap <C-p> :CtrlP<CR>
-nnoremap <Left> :wincmd h<CR>
-nnoremap <Right> :wincmd l<CR>
-nnoremap <Up> :wincmd k<CR>
-nnoremap <Down> :wincmd j<CR>
+nnoremap h :wincmd h<CR>
+nnoremap l :wincmd l<CR>
+nnoremap k :wincmd k<CR>
+nnoremap j :wincmd j<CR>
 nnoremap <Leader>= :wincmd =<CR>
 nnoremap <Leader>- :wincmd _<CR>
 
@@ -65,7 +77,7 @@ nmap <F3> <Plug>RailsFind
 nnoremap <C-Left> <C-O> 
 nnoremap <C-Right> <C-i>
 
-nmap s <Plug>(easymotion-s2)
+nmap <Space> <Plug>(easymotion-s2)
 "nmap t <Plug>(easymotion-t2)
 
 function! ToggleErrors()
