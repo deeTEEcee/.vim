@@ -12,13 +12,17 @@ Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-fugitive'
 Plugin 'xolox/vim-session'
   Plugin 'xolox/vim-misc' "needed for vim-session
-"Plugin 'nelstrom/vim-textobj-rubyblock'
- " Plugin 'kana/vim-textobj-user' "needed for rubyblock
+Plugin 'nelstrom/vim-textobj-rubyblock'
+  Plugin 'kana/vim-textobj-user' "needed for rubyblock
+  Plugin 'vim-scripts/matchit.zip'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-abolish'
 Plugin 'tpope/vim-repeat' " see http://vimcasts.org/episodes/creating-repeatable-mappings-with-repeat-vim/ if confused
 Plugin 'tpope/vim-commentary' " test this out and get rid of NERDCommentator
 Plugin 'vim-scripts/Tabmerge'
+
+"TODO
+"Plugin 'godlygeek/tabular'
 
 "Visuals and Info
 Plugin 'altercation/vim-colors-solarized'
@@ -40,6 +44,10 @@ Plugin 'Lokaltog/vim-easymotion'
 Plugin 'https://github.com/tpope/vim-rails'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-endwise'
+
+"Unite
+Plugin 'Shougo/unite.vim'
+Plugin 'tsukkee/unite-tag'
 
 call vundle#end()            " required
 filetype plugin indent on    " required

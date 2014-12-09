@@ -8,16 +8,15 @@ nnoremap <Leader>pi :PluginInstall<CR>
 nnoremap d "_d
 vnoremap d "_d
 vnoremap y ygv 
-"nnoremap <Up> -
-"nnoremap <Down> +
 nnoremap <C-d> dd
 
 nnoremap <Leader>q :qa<CR>
 nnoremap <Leader>w :wa<CR>
-
-
 nmap ,cp :let @*=expand("%:p")<CR>
 nmap ,cp :let @*=expand("%:p:h")<CR>
+
+
+
 "Refresh command
 nnoremap <Leader>ra :CtrlPClearCache<CR>:checktime<CR>
 nnoremap <Leader>rc :so $MYVIMRC<CR>
@@ -35,7 +34,7 @@ nnoremap <Leader>so :OpenSession dev<CR>
 nnoremap <Leader>sor :OpenSession g-rails<CR>
 
 """"""""Input
-nmap <Enter> O<Esc>
+nmap <C-Enter> O<Esc>
 nmap <leader>p <Plug>yankstack_substitute_older_paste
 nmap <leader>P <Plug>yankstack_substitute_newer_paste
 
@@ -49,7 +48,7 @@ nnoremap <Leader>tm :Tabmerge
 
 nnoremap <silent> <Leader>tn            :999TabberNew<CR>
 nnoremap <silent> <Leader><Leader> :TabberSelectLastActive<CR>
-nnoremap <silent> <C-t>       :tabnew<CR>
+"nnoremap <silent> <C-t>       :tabnew<CR>
 nnoremap <silent> <Leader>tc       :tabclose<CR>
 nnoremap <silent> <Leader>1        :tabnext 1<CR>
 nnoremap <silent> <Leader>2        :tabnext 2<CR>
@@ -72,8 +71,9 @@ nnoremap j :wincmd j<CR>
 nnoremap <Leader>= :wincmd =<CR>
 nnoremap <Leader>- :wincmd _<CR>
 
-""""""""Search
-nmap <F3> <Plug>RailsFind
+""""""""Navigation
+nmap <Leader><F3> <Plug>RailsFind
+nnoremap <F3> <C-]>
 nnoremap <C-Left> <C-O> 
 nnoremap <C-Right> <C-i>
 
