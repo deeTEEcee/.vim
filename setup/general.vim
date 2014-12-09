@@ -1,9 +1,16 @@
 """""""" General Settings
+""" On Autoload
+let g:indent_guides_enable_on_vim_startup = 0
+
+runtime macros/matchit.vim
 if has("autocmd")
   filetype indent plugin on
 endif
 let g:agprg="ag -Q --nogroup --nocolor --column"
-  
+
+""" Navigating
+let g:ctrlp_regexp = 1
+
 """ Coding
 set mouse=a
 set clipboard=unnamed
@@ -23,6 +30,10 @@ let g:solarized_termcolors = 256  " New line!!
 colorscheme solarized
 let g:netrw_liststyle=3
 let g:tabber_predefined_labels = { 1: 'Models', 2: 'Views', 3: 'Controllers', 4: 'Routes', 5: 'Translations', 6: 'Helpers' } " TODO: only if this is a rails project
+let g:indent_guides_default_mapping = 1
+set splitbelow
+set splitright
+
 
 """"""""" Plugin Settings
 "Enable tabline
@@ -41,7 +52,6 @@ let g:session_default_to_last = 1
 let g:session_autosave = 'no'
 
 "Ruby
-runtime macros/matchit.vim
 
 set hlsearch
 set omnifunc=rubycomplete#Complete
