@@ -8,8 +8,8 @@ nnoremap <Leader>pi :PluginInstall<CR>
 nnoremap d "_d
 vnoremap d "_d
 vnoremap y ygv 
-nnoremap <Up> -
-nnoremap <Down> +
+"nnoremap <Up> -
+"nnoremap <Down> +
 nnoremap <C-d> dd
 
 nnoremap <Leader>q :qa<CR>
