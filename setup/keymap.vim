@@ -14,7 +14,7 @@ nnoremap <Leader>q :qa<CR>
 nnoremap <Leader>w :wa<CR>
 nmap ,cp :let @*=expand("%:p")<CR>
 nmap ,cp :let @*=expand("%:p:h")<CR>
-
+nnoremap <Leader><Leader>t :!ctags -R --languages=ruby --exclude=db<CR>
 
 
 "Refresh command
