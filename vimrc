@@ -20,6 +20,8 @@ Plugin 'tpope/vim-abolish'
 Plugin 'tpope/vim-repeat' " see http://vimcasts.org/episodes/creating-repeatable-mappings-with-repeat-vim/ if confused
 Plugin 'tpope/vim-commentary' " test this out and get rid of NERDCommentator
 Plugin 'vim-scripts/Tabmerge'
+Plugin 'bling/vim-bufferline'
+Plugin 'tpope/vim-unimpaired'
 
 "TODO
 "Plugin 'godlygeek/tabular'
@@ -45,9 +47,6 @@ Plugin 'https://github.com/tpope/vim-rails'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-endwise'
 
-"Unite
-Plugin 'Shougo/unite.vim'
-Plugin 'tsukkee/unite-tag'
 
 call vundle#end()            " required
 filetype plugin indent on    " required

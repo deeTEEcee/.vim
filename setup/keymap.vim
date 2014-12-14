@@ -14,7 +14,8 @@ nnoremap <Leader>q :qa<CR>
 nnoremap <Leader>w :wa<CR>
 nmap ,cp :let @*=expand("%:p")<CR>
 nmap ,cp :let @*=expand("%:p:h")<CR>
-nnoremap <Leader><Leader>t :!ctags -R --languages=ruby --exclude=db<CR>
+"nnoremap <Leader><Leader>t :!ctags -R --languages=ruby --exclude=db<CR>
+"nnoremap <Leader><Leader>tj :!ctags -R --languages=javascript<CR>
 
 
 "Refresh command
@@ -46,9 +47,9 @@ nnoremap <silent> <C-l> :nohl<CR><C-l>
 """ Tabs
 nnoremap <Leader>tm :Tabmerge 
 
-nnoremap <silent> <Leader>tn            :999TabberNew<CR>
+nnoremap <silent> <Leader>tn            :tabnew<CR>
 nnoremap <silent> <Leader><Leader> :TabberSelectLastActive<CR>
-"nnoremap <silent> <C-t>       :tabnew<CR>
+nnoremap <silent> <C-t>       :tabnew<CR>
 nnoremap <silent> <Leader>tc       :tabclose<CR>
 nnoremap <silent> <Leader>1        :tabnext 1<CR>
 nnoremap <silent> <Leader>2        :tabnext 2<CR>
@@ -64,6 +65,9 @@ nnoremap <silent> <Leader>9        :tabnext 9<CR>
 nmap <F1> :NERDTreeToggle<CR>
 " m = options (a to add new file)"
 nnoremap <C-p> :CtrlP<CR>
+nnoremap .<C-p> :CtrlPMRU<CR>
+nnoremap .b :CtrlPBuffer<CR>
+
 nnoremap h :wincmd h<CR>
 nnoremap l :wincmd l<CR>
 nnoremap k :wincmd k<CR>
@@ -89,4 +93,3 @@ function! ToggleErrors()
     endif
 endfunction
 nnoremap <silent> <Leader>e :<C-u>call ToggleErrors()<CR>
-" TODO: add syntastic check hotkey maybe

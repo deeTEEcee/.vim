@@ -1,15 +1,19 @@
 """""""" General Settings
+"""On Startup
+if filereadable('.vimrc-project')
+  source .vimrc-project
+endif
+
 """ On Autoload
 let g:indent_guides_enable_on_vim_startup = 0
 
 runtime macros/matchit.vim
-if has("autocmd")
-  filetype indent plugin on
-endif
+
 let g:agprg="ag -Q --nogroup --nocolor --column"
 
 """ Navigating
 let g:ctrlp_regexp = 1
+let g:bufferline_echo = 0
 
 """ Coding
 set mouse=a
@@ -29,10 +33,11 @@ set background=light
 let g:solarized_termcolors = 256  " New line!!
 colorscheme solarized
 let g:netrw_liststyle=3
-let g:tabber_predefined_labels = { 1: 'Models', 2: 'Views', 3: 'Controllers', 4: 'Routes', 5: 'Translations', 6: 'Helpers' } " TODO: only if this is a rails project
 let g:indent_guides_default_mapping = 1
 set splitbelow
 set splitright
+"let g:tabber_predefined_labels = { 1: 'Models', 2: 'Views', 3: 'Controllers', 4: 'Routes', 5: 'Translations', 6: 'Helpers' } " TODO: only if this is a rails project
+
 
 
 """"""""" Plugin Settings
