@@ -93,3 +93,7 @@ function! ToggleErrors()
     endif
 endfunction
 nnoremap <silent> <Leader>e :<C-u>call ToggleErrors()<CR>
+
+" TODO: add <Leader>F12 for the the stack that this links to
+map <F12> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<' . synIDattr(synID(line("."),col("."),0),"name") . "> lo<" . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">" . " FG:" . synIDattr(synIDtrans(synID(line("."),col("."),1)),"fg#")<CR>
+

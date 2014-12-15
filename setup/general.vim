@@ -28,15 +28,11 @@ set expandtab
 
 """ Visual
 set number
-syntax enable
-set background=light
-let g:solarized_termcolors = 256  " New line!!
-colorscheme solarized
 let g:netrw_liststyle=3
 let g:indent_guides_default_mapping = 1
 set splitbelow
 set splitright
-let g:tabber_predefined_labels = { 1: 'Models', 2: 'Views', 3: 'Controllers', 4: 'Routes', 5: 'Translations', 6: 'Helpers' 7: 'Testing' } " TODO: only if this is a rails project
+let g:tabber_predefined_labels = { 1: 'Models', 2: 'Views', 3: 'Controllers', 4: 'Routes', 5: 'Translations', 6: 'Helpers', 7: 'Testing' } " TODO: only if this is a rails project
 
 
 
@@ -50,6 +46,7 @@ set laststatus=2
 set encoding=utf-8
 let g:airline#extensions#tabline#enabled = 0
 let g:airline#extensions#tabline#tab_nr_type = 1 " tab number
+let g:airline_inactive_collapse=1
 
 "Sessions
 let g:session_autoload = 'yes'
@@ -82,7 +79,6 @@ let g:ctrlp_custom_ignore = {
   \ 'dir': '\vtmp|public',
   \ 'file': '\v\.(exe|so|dll|markdown)$',
   \ }
-
 
 
 if !argc()
