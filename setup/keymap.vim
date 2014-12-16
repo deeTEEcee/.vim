@@ -74,6 +74,9 @@ nnoremap j :wincmd j<CR>
 nnoremap <Leader>= :wincmd =<CR>
 nnoremap <Leader>- :wincmd _<CR>
 
+nnoremap <C-v> <C-w>t<C-w>H<CR>
+nnoremap <C-h> <C-w>t<C-w>K<CR>
+
 """"""""Navigation
 nmap <Leader><F3> <Plug>RailsFind
 nnoremap <F3> <C-]>
