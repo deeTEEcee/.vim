@@ -1,5 +1,4 @@
 let maplocalleader = ","
-
 " TODO: make abbreviations for tohru's preferences"
 
 """"""""General
@@ -12,9 +11,9 @@ nnoremap <C-d> dd
 
 nnoremap <Leader>q :qa<CR>
 nnoremap <Leader>w :wa<CR>
-nmap ,cp :let @*=expand("%:p")<CR>
+"nmap ,cp :let @*=expand("%:p")<CR>
 nmap ,cp :let @*=expand("%:p:h")<CR>
-"nnoremap <Leader><Leader>t :!ctags -R --languages=ruby --exclude=db<CR>
+nnoremap <Leader><Leader>t :!ctags -R --languages=ruby --exclude=db<CR>
 "nnoremap <Leader><Leader>tj :!ctags -R --languages=javascript<CR>
 
 
@@ -97,3 +96,9 @@ nnoremap <silent> <Leader>e :<C-u>call ToggleErrors()<CR>
 " TODO: add <Leader>F12 for the the stack that this links to
 map <F12> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<' . synIDattr(synID(line("."),col("."),0),"name") . "> lo<" . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">" . " FG:" . synIDattr(synIDtrans(synID(line("."),col("."),1)),"fg#")<CR>
 
+function QReplace(arg1, arg2)
+  execute 'Qargs | argdo %s/' . a:arg1 . '/' . a:arg2 . '/gc | update'
+endfunction 
+command -nargs=* Qr :call QReplace(<f-args>)
+"command -nargs=1 Qdo :Qargs | argdo <args> | update
+":Qargs | argdo %s/Commuity::RoomInvite/Community::Room::Invite | update

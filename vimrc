@@ -20,8 +20,8 @@ Plugin 'tpope/vim-abolish'
 Plugin 'tpope/vim-repeat' " see http://vimcasts.org/episodes/creating-repeatable-mappings-with-repeat-vim/ if confused
 Plugin 'tpope/vim-commentary' " test this out and get rid of NERDCommentator
 Plugin 'vim-scripts/Tabmerge'
-Plugin 'bling/vim-bufferline'
 Plugin 'tpope/vim-unimpaired'
+Plugin 'tyru/open-browser.vim'
 
 "TODO
 "Plugin 'godlygeek/tabular'
@@ -38,7 +38,7 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'ggreer/the_silver_searcher' "ag for commandline
 Plugin 'rking/ag.vim' "ag for vim
 Plugin 'mileszs/ack.vim'
-Plugin 'henrik/vim-qargs' "for commands on quickfix list
+Plugin 'nelstrom/vim-qargs'
 Plugin 'ervandew/supertab'
 Plugin 'Lokaltog/vim-easymotion'
 

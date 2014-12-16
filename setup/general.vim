@@ -13,7 +13,6 @@ let g:agprg="ag -Q --nogroup --nocolor --column"
 
 """ Navigating
 let g:ctrlp_regexp = 1
-let g:bufferline_echo = 0
 
 """ Coding
 set mouse=a
@@ -48,10 +47,11 @@ let g:airline#extensions#tabline#enabled = 0
 let g:airline#extensions#tabline#tab_nr_type = 1 " tab number
 let g:airline_inactive_collapse=1
 
-"Sessions
+"Sessions - we want to autosave and autoload always to dev
 let g:session_autoload = 'yes'
-let g:session_default_to_last = 1
-let g:session_autosave = 'no'
+let g:session_default_to_last = 0
+let g:session_autosave = 'yes'
+let g:session_default_name = 'dev'
 
 "Ruby
 
