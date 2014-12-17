@@ -1,6 +1,3 @@
-let maplocalleader = ","
-" TODO: make abbreviations for tohru's preferences"
-
 """"""""General
 nnoremap <Leader>pi :PluginInstall<CR>
 "nnoremap <leader>ev :vsplit $MYVIMRC<cr> and also :source it
@@ -93,22 +90,3 @@ nnoremap <C-Right> <C-i>
 nmap <Space> <Plug>(easymotion-s2)
 "nmap t <Plug>(easymotion-t2)
 
-function! ToggleErrors()
-    let old_last_winnr = winnr('$')
-    lclose
-    if old_last_winnr == winnr('$')
-        " Nothing was closed, open syntastic error location panel
-        Errors
-    endif
-endfunction
-nnoremap <silent> <Leader>e :<C-u>call ToggleErrors()<CR>
-
-" TODO: add <Leader>F12 for the the stack that this links to
-map <F12> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<' . synIDattr(synID(line("."),col("."),0),"name") . "> lo<" . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">" . " FG:" . synIDattr(synIDtrans(synID(line("."),col("."),1)),"fg#")<CR>
-
-function QReplace(arg1, arg2)
-  execute 'Qargs | argdo %s/' . a:arg1 . '/' . a:arg2 . '/gc | update'
-endfunction 
-command -nargs=* Qr :call QReplace(<f-args>)
-"command -nargs=1 Qdo :Qargs | argdo <args> | update
-":Qargs | argdo %s/Commuity::RoomInvite/Community::Room::Invite | update
