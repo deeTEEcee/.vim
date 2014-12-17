@@ -22,6 +22,7 @@ Plugin 'tpope/vim-commentary' " test this out and get rid of NERDCommentator
 Plugin 'vim-scripts/Tabmerge'
 Plugin 'tpope/vim-unimpaired'
 Plugin 'tyru/open-browser.vim'
+Plugin 'rizzatti/dash.vim'
 
 "TODO
 "Plugin 'godlygeek/tabular'
