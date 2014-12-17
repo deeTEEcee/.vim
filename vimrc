@@ -43,7 +43,8 @@ Plugin 'ervandew/supertab'
 Plugin 'Lokaltog/vim-easymotion'
 
 "Rails
-Plugin 'https://github.com/tpope/vim-rails'
+Plugin 'tpope/vim-rails'
+Plugin 'thoughtbot/vim-rspec'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-endwise'
 
