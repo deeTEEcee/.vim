@@ -4,6 +4,13 @@ let maplocalleader = ","
 """"""""General
 nnoremap <Leader>pi :PluginInstall<CR>
 "nnoremap <leader>ev :vsplit $MYVIMRC<cr> and also :source it
+"
+""" Some of this taken from vim-easyclip (they rebind it in this way but i dont want to be forced to use a new plugin for some small changes)
+
+nnoremap c "_c
+vnoremap c "_c
+nnoremap cc "_S
+vnoremap cc "_S 
 nnoremap d "_d
 vnoremap d "_d
 vnoremap y ygv 
@@ -18,8 +25,8 @@ nnoremap <Leader><Leader>t :!ctags -R --languages=ruby --exclude=db<CR>
 
 
 "Refresh command
-nnoremap <Leader>ra :CtrlPClearCache<CR>:checktime<CR>
-nnoremap <Leader>rc :so $MYVIMRC<CR>
+nnoremap <Leader>r :checktime<CR>
+"nnoremap <Leader>rc :so $MYVIMRC<CR>
 
 "Git (Use :Git <command> and we will temporarily go back to the terminal. Some
 "special commands just aren't helpful in git fugitive)

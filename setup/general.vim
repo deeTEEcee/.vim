@@ -3,6 +3,7 @@
 if filereadable('.vimrc-project')
   source .vimrc-project
 endif
+set autoread
 
 """ On Autoload
 let g:indent_guides_enable_on_vim_startup = 0
