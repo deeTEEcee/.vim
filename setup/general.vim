@@ -44,7 +44,6 @@ let g:session_autosave = 'yes'
 let g:session_default_name = 'dev'
 
 "Ruby
-
 set hlsearch
 set omnifunc=rubycomplete#Complete
 let g:rubycomplete_buffer_loading = 1
@@ -69,3 +68,6 @@ let g:ctrlp_custom_ignore = {
   \ 'dir': '\vtmp|public',
   \ 'file': '\v\.(exe|so|dll|markdown)$',
   \ }
+
+"Rails
+"let g:rspec_command = "Dispatch foreman run rspec {spec}"

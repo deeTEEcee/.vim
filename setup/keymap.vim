@@ -90,3 +90,8 @@ nnoremap <C-Right> <C-i>
 nmap <Space> <Plug>(easymotion-s2)
 "nmap t <Plug>(easymotion-t2)
 
+""Rails
+map <Leader>rt :call RunCurrentSpecFile()<CR>
+"map <Leader>s :call RunNearestSpec()<CR>
+"map <Leader>l :call RunLastSpec()<CR>
+"map <Leader>a :call RunAllSpecs()<CR>
