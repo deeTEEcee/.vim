@@ -31,11 +31,11 @@ nnoremap <Leader>gl :Git log -p %<CR>
 nnoremap <Leader>gb :Gblame<CR>
 
 nnoremap <Leader>ss :SaveSession dev<CR>
-nnoremap <Leader>ssr :SaveSession g-rails<CR>
+nnoremap <Leader>srs :SaveSession g-rails<CR>
 nnoremap <Leader>sd :DeleteSession dev<CR>
-nnoremap <Leader>sdr :DeleteSession g-rails<CR>
+nnoremap <Leader>srd :DeleteSession g-rails<CR>
 nnoremap <Leader>so :OpenSession dev<CR>
-nnoremap <Leader>sor :OpenSession g-rails<CR>
+nnoremap <Leader>sro :OpenSession g-rails<CR>
 
 """"""""Input
 nmap <C-Enter> O<Esc>
