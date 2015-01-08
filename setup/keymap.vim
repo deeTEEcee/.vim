@@ -45,6 +45,7 @@ nmap <leader>P <Plug>yankstack_substitute_newer_paste
 """""""Visual Help
 " <Ctrl-l> redraws the screen and removes any search highlighting.
 nnoremap <silent> <C-l> :nohl<CR><C-l>
+nnoremap <Leader>ag :botright cwindow<CR>
 " add a command for ':botright cwindow' for quickfix
 " \ig = indent colors
 
