@@ -45,6 +45,7 @@ nmap <leader>P <Plug>yankstack_substitute_newer_paste
 """""""Visual Help
 " <Ctrl-l> redraws the screen and removes any search highlighting.
 nnoremap <silent> <C-l> :nohl<CR><C-l>
+" add a command for ':botright cwindow' for quickfix
 " \ig = indent colors
 
 """ Tabs
@@ -95,3 +96,8 @@ map <Leader>rt :call RunCurrentSpecFile()<CR>
 "map <Leader>s :call RunNearestSpec()<CR>
 "map <Leader>l :call RunLastSpec()<CR>
 "map <Leader>a :call RunAllSpecs()<CR>
+
+"Remappings (TODO: if there are any in general config, move em here as well)
+let g:ag_results_mapping_replacements = {
+  \ 'horizontal_split': 's'
+\}
