@@ -10,7 +10,7 @@ nnoremap cc "_S
 vnoremap cc "_S 
 nnoremap d "_d
 vnoremap d "_d
-vnoremap y ygv 
+vnoremap y ygv<esc> 
 nnoremap <C-d> dd
 
 nnoremap <Leader>q :qa<CR>

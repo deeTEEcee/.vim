@@ -36,6 +36,7 @@ Plugin 'fweep/vim-tabber' " tab labeling for use with airline
 "File/Directory Searching and Code Browsing
 Plugin 'https://github.com/scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
+Plugin 'd11wtq/ctrlp_bdelete.vim'
 Plugin 'ggreer/the_silver_searcher' "ag for commandline
 Plugin 'rking/ag.vim' "ag for vim
 Plugin 'mileszs/ack.vim'
