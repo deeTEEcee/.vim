@@ -4,7 +4,8 @@ if filereadable('.vimrc-project')
   source .vimrc-project
 endif
 set autoread
-call ctrlp_bdelete#init()
+"call ctrlp_bdelete#init()
+let g:ruby_path = system('rvm current')
 
 """ On Autoload
 let g:indent_guides_enable_on_vim_startup = 0
@@ -20,7 +21,8 @@ let g:ctrlp_regexp = 1
 set mouse=a
 set clipboard=unnamed
 set smartindent
-filetype indent on
+"filetype indent on
+filetype off
 set tabstop=2
 set softtabstop=2
 set shiftwidth=2
@@ -39,17 +41,17 @@ let g:airline#extensions#tabline#tab_nr_type = 1 " tab number
 let g:airline_inactive_collapse=1
 
 "Sessions - we want to autosave and autoload always to dev
-let g:session_autoload = 'yes'
-let g:session_default_to_last = 0
-let g:session_autosave = 'yes'
-let g:session_default_name = 'dev'
+"let g:session_autoload = 'no'
+"let g:session_default_to_last = 0
+"let g:session_autosave = 'yes'
+"let g:session_default_name = 'dev'
 
 "Ruby
-set hlsearch
-set omnifunc=rubycomplete#Complete
-let g:rubycomplete_buffer_loading = 1
-let g:rubycomplete_classes_in_global=1
-let g:rubycomplete_rails = 1
+"set hlsearch
+"set omnifunc=rubycomplete#Complete
+"let g:rubycomplete_buffer_loading = 1
+"let g:rubycomplete_classes_in_global=1
+"let g:rubycomplete_rails = 1
 
 
 
